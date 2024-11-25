@@ -86,7 +86,7 @@ export const DefaultBrowser = observer(() => {
           >
             <div
               style={{
-                background: `url(https://github.com/IroniumStudios/wexium/blob/main/static/icons/icon.png?raw=true)`,
+                background: `url(https://github.com/wexium-project/wexium-browser/blob/main/static/icons/icon.png?raw=true)`,
                 width: '21px',
                 height: '21px',
                 backgroundSize: 'cover',

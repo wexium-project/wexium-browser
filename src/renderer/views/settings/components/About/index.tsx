@@ -3,7 +3,6 @@ import * as React from 'react';
 import { Header, Row, Title, Control } from '../App/style';
 import { Button } from '~/renderer/components/Button';
 import store from '../../store';
-import { BLUE_500, BLUEGREEN } from '~/renderer/constants';
 import { APP_ICON } from '~/renderer/constants/imgs';
 import { observer } from 'mobx-react-lite';
 
@@ -12,11 +11,11 @@ import { ElectronVer, ChromiumVer, V8Ver, NodeVer, AppVer } from '~/renderer/con
 export const About = () => {
   return (
     <>
-    <a id="about" name="about">
-      <Header>About wexium</Header>
+    <a id="about">
+      <Header>About Wexium</Header>
       <Row>
        <Title>
-       wexium is a fork of <a rel="noopener" target="_blank" href="https://github.com/wexond">Wexond Browser</a> by <a rel="noopener" target="_blank" href="https://github.com/IroniumStudios">Wexium Browser Project</a>.
+       Wexium is a fork of <a rel="noopener" target="_blank" href="https://github.com/wexond">Wexond Browser</a> by <a rel="noopener" target="_blank" href="https://github.com/IroniumStudios">Damon Smith</a>.
        </Title>
      </Row>
      <Row>
@@ -29,7 +28,7 @@ export const About = () => {
      </Row>
      <Row>
        <p>&nbsp;&nbsp;
-         <a rel="noopener" target="_blank" href="https://github.com/IroniumStudios/wexium">
+         <a rel="noopener" target="_blank" href="https://github.com/wexium-project/wexium-browser">
          <img width="64px" title="wexium Logo (Click Me!)" alt="app_icon.png" className="appicon" src={APP_ICON}></img></a>
        </p>
      </Row>
@@ -46,7 +45,7 @@ export const About = () => {
      </Row>
      <Row>
        <p>
-         <a rel="noopener" target="_blank" href="https://github.com/IroniumStudios/wexium">App Version</a>: {AppVer}
+         <a rel="noopener" target="_blank" href="https://github.com/wexium-project/wexium-browser">App Version</a>: {AppVer}
          <br/>
          <br/>
          <small>Copyright © <a href="https://thorium.rocks/about" target="_blank" rel="noopener">Alexander D. Frick</a></small>
