@@ -1,7 +1,7 @@
 /* Copyright (c) 2025 Wexium Browser Project */
 
 import { ipcMain, app, crashReporter, webContents } from 'electron';
-import { setIpcMain } from '@wexond/rpc-electron';
+import { setIpcMain } from '@wexium/rpc-electron';
 setIpcMain(ipcMain);
 
 console.log(app.getPath('crashDumps'))

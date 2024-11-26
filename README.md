@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="[https://wexalum.net](https://damonicproducts.wixsite.com/smithcloud/support)"><img src="static/icons/icon.png" width="256"></a>
+  <a href="[https://wexium.net](https://damonicproducts.wixsite.com/smithcloud/support)"><img src="static/icons/icon.png" width="256"></a>
 </p>
 
 <div align="center">
-  <h1>Wexalum Browser</h1>
+  <h1>Wexium Browser</h1>
 
 > Looking for help, as of now there is only one person {me} doing everything, it would be nice to have some help, if you would like to help, pleasee email me.
 
@@ -133,13 +133,13 @@ npm install -g electron@latest
 
 
 
-#### Now in the main wexalum-main folder run the commands below
+#### Now in the main wexium-main folder run the commands below
 
 ```bash
  yarn install # Install needed depedencies.
  yarn run build # Builds native modules using Electron headers.
  yarn run rebuild # Rebuilds native modules using Electron headers.
- yarn run start # Starts the wexalum App
+ yarn run start # Starts the wexium App
 ```
 
 ### Compiling and yarn lint Commands for Windows
@@ -147,7 +147,7 @@ npm install -g electron@latest
 
 
 ```bash
- yarn compile-win32 # Package wexalum for Windows
+ yarn compile-win32 # Package wexium for Windows
  yarn lint # Runs linter
  yarn lint-fix # Runs linter and automatically applies fixes
 ```
@@ -158,8 +158,8 @@ npm install -g electron@latest
 
 
 ```bash
-$ yarn compile-linux # Package wexalum for Linux
-$ yarn compile-darwin # Package wexalum for macOS
+$ yarn compile-linux # Package wexium for Linux
+$ yarn compile-darwin # Package wexium for macOS
 ```
 
 
