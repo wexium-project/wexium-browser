@@ -28,7 +28,6 @@ app.commandLine.appendSwitch('enable-quic');
 app.commandLine.appendSwitch('enable-ui-devtools');
 app.commandLine.appendSwitch('ignore-gpu-blocklist');
 app.commandLine.appendSwitch('enable-gpu-rasterization');
-app.commandLine.appendSwitch('enable-zero-copy');
 app.commandLine.appendSwitch('enable-webgl-draft-extensions');
 app.commandLine.appendSwitch('enable-transparent-visuals');
 app.commandLine.appendSwitch('disable-background-timer-throttling');
