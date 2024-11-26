@@ -122,11 +122,13 @@ export class DialogsService {
     this.browserViewDetails.set(browserView.webContents.id, true);
 
     if (foundDialog) {
+      // when electron fixes it use browserWindow.contentView.addChildView(this.webContentsView);
       browserWindow.addBrowserView(browserView);
       foundDialog.rearrange();
       return null;
     }
 
+    // when electron fixes it use browserWindow.contentView.addChildView(this.webContentsView);
     browserWindow.addBrowserView(browserView);
     browserView.setBounds({ x: 0, y: 0, width: 1, height: 1 });
 
@@ -168,6 +170,7 @@ export class DialogsService {
 
         browserWindow.webContents.send('dialog-visibility-change', name, false);
 
+        // when electron fixes it use browserWindow.contentView.removeChildView(this.webContentsView);
         browserWindow.removeBrowserView(browserView);
 
         if (tabAssociation && dialog.tabIds.length > 0) return;
@@ -230,9 +233,13 @@ export class DialogsService {
 
       if (visible) {
         dialog._sendTabInfo(id);
+        // when electron fixes it use browserWindow.contentView.contentView.removeChildView(this.webContentsView);
         browserWindow.removeBrowserView(browserView);
+
+        // when electron fixes it use browserWindow.contentView.addChildView(this.webContentsView);
         browserWindow.addBrowserView(browserView);
       } else {
+        // when electron fixes it use browserWindow.contentView.removeChildView(this.webContentsView);
         browserWindow.removeBrowserView(browserView);
       }
     };

@@ -131,6 +131,7 @@ export class PersistentDialog {
 
         this.visible = true;
 
+        // when electron fixes it use browserWindow.contentView.addChildView(this.webContentsView);
         browserWindow.addBrowserView(this.browserView);
         this.rearrange();
 
@@ -177,9 +178,11 @@ export class PersistentDialog {
 
     if (this.hideTimeout) {
       this.timeout = setTimeout(() => {
+        // when electron fixes it use browserWindow.contentView.removeChildView(this.webContentsView);
         this.browserWindow.removeBrowserView(this.browserView);
       }, this.hideTimeout);
     } else {
+      // when electron fixes it use browserWindow.contentView.removeChildView(this.webContentsView);
       this.browserWindow.removeBrowserView(this.browserView);
     }
 
@@ -189,8 +192,11 @@ export class PersistentDialog {
   }
 
   public bringToTop() {
+    // when electron fixes it use browserWindow.contentView.removeChildView(this.webContentsView);
     this.browserWindow.removeBrowserView(this.browserView);
-    this.browserWindow.addBrowserView(this.browserView);
+
+    // when electron fixes it use browserWindow.contentView.addChildView(this.webContentsView);
+    this.browserWindow.addBrowserView(this.browserView); 
   }
 
   public destroy() {
