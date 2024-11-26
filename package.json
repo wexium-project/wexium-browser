@@ -24,7 +24,7 @@
   },
   "resolutions": {
     "mobx": "6.3.3",
-    "mobx-react-lite": "3.4.0"
+    "mobx-react-lite": "4.0.7"
   },
   "scripts": {
     "dev-renderer": "cross-env DEV=1 webpack serve --config webpack.config.renderer.js",
@@ -85,7 +85,7 @@
     "icojs": "^0.19.4",
     "jszip": "^3.10.1",
     "mobx": "6.3.3",
-    "mobx-react-lite": "3.4.0",
+    "mobx-react-lite": "4.0.7",
     "node-fetch": "^3.3.2",
     "node-parse-bookmarks": "^1.0.3",
     "prettier": "^3.4.1",
