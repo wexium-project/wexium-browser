@@ -1,6 +1,6 @@
 /* Copyright (c) 2025 Wexium Browser Project */
 
-import { RendererToMainChannel } from '@wexond/rpc-electron';
+import { RendererToMainChannel } from '@wexium/rpc-electron';
 
 export interface ExtensionMainService {
   uninstall(id: string): void;

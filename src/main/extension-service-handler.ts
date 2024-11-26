@@ -1,6 +1,6 @@
 /* Copyright (c) 2025 Wexium Browser Project */
 
-import { RpcMainEvent, RpcMainHandler } from '@wexond/rpc-electron';
+import { RpcMainEvent, RpcMainHandler } from '@wexium/rpc-electron';
 import { webContents } from 'electron';
 import {
   extensionMainChannel,
