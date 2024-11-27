@@ -186,12 +186,18 @@ export class DialogsService {
         this.browserViewDetails.set(browserView.webContents.id, false);
 
         if (this.browserViews.length > 1) {
-          // this.browserViewDetails.delete(browserView.id);
-          // browserView.destroy();
-          // this.browserViews.splice(1, 1);
+          // Delete the browser view from the map of details
+          this.browserViewDetails.delete(browserView.webContents.id);
+          
+          // Remove the BrowserView from the browser window (which will clean up most resources)
+          browserWindow.removeBrowserView(browserView);
+          
+          // Remove the browser view from the array
+          this.browserViews.splice(this.browserViews.indexOf(browserView), 1);
         } else {
+          // If there's only one view, load a blank page to clean it up
           browserView.webContents.loadURL('about:blank');
-        }
+        }        
 
         if (tabAssociation) {
           appWindow.viewManager.off('activated', tabsEvents.activate);

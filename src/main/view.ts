@@ -302,14 +302,7 @@ export class View {
     (async () => {
       await this.webContents.loadURL(url);
     })();
-
-//      TODO:
-//    this.webContentsView.setAutoResize({
-//      width: true,
-//      height: true,
-//      horizontal: false,
-//      vertical: false,
-//    });
+    // if i am correct WebContentsView does not require a setAudoResize Value.
   }
   updateFavicon() {
     throw new Error('Method not implemented.');
